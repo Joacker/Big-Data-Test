@@ -1,0 +1,14 @@
+###########-VERSION-############
+version: '3.2'
+
+###########-SERVICIOS-############
+services:
+
+##########-APACHE-SPARK-############
+ spark:
+  image: bitnami/spark:2.4.5
+  container_name: spark
+  ports:
+    - "8080:8080"
+    - "7077:7077"
+    - "6066:6066"
